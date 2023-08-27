@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navBar">
+            <p>home </p>
+            <h2>Weather App</h2>
+            <p>day/night mode</p>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div bar>
+            <div class="search-bar">
+                <input class="search1" type="text" placeholder="Entre City">
+                <img src="icons8-search.svg" class="searchBtn1">
+            </div>
+        </div>
+        <div class="left-container" >
+            <div class="search-container">
+                <input class="search" type="text" placeholder="Entre City">
+                <img src="icons8-search.svg" class="searchBtn2">
+            </div>
+            <div class='box'>
+                <div class="boxLocation">
+                    <div nameCity>location</div>
+                    <div>
+                        <img src="icons8-search.svg" alt="">
+                    </div>
+                </div>
+                <div class="date-time">date,time</div>
+            </div>
+            <div class='box' fullData>cloud</div>
+            <div class='box'>data</div>
+        </div>
+        <div class="right-container">
+            <div class="chart-display">
+                <canvas id="myChart"></canvas>
+            </div>
+            <div class="data-display">
+                <div class="data">1</div>
+                <div class="data">2</div>
+                <div class="data">3</div>
+                <div class="data">4</div>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
