@@ -1,28 +1,28 @@
 body{
     padding: 0;
     margin: 0;
+    border-radius: 10px;
 }
 .container{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap-revee;
     background-color: whitesmoke;
     width:100vw;
-    height:92vh;
+    height:90vh;
     margin-top:48px;
     align-items: center;
 }
 .container.click { 
     display: flex;
     flex-direction: row;
-    background-color: whitesmoke;
+    background-color:whitesmoke;
     width:100vw;
-    height:92vh;
+    height:100vh;
     margin-top:38px;
     align-items: center;
     justify-content: center;
+    font-family:Arial, Helvetica, sans-serif
   }
-
 .navBar{
     display:flex;
     padding-left: 20px;
@@ -45,13 +45,13 @@ h2{
     display: flex;
     flex-direction: column;
     background-color: blueviolet;
-    border-radius: 20px;
+    border-top-right-radius: 30px;
+    border-top-left-radius:30px;
     align-items: center;
-    position: relative;
-    margin-top: 40px;
     margin-right: 20px;
-    margin-bottom: 20px;
+    /* margin-top: 25px; */
     width: 28%;
+    height:95vh;
     gap:50px;
     scale: 0;
 }
@@ -75,7 +75,6 @@ h2{
 .search-container{
     display: flex;
     flex-direction: row;
-    
     align-items: center;
     justify-content: space-between;
     height:fit-content;
@@ -116,14 +115,12 @@ h2{
 .box{
     position: relative;
     height:auto;
-    width:20vw;
-    height: 18vh;
-    display: flex;
-    flex-direction: column;
-    background-color: white;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
+    height: 120px;
+    background: rgba(255, 255, 255, 0.47); /* Semi-transparent white background */
+    backdrop-filter: blur(10px); /* Apply a blur effect to the backdrop */
+    border-radius: 10px; /* Add rounded corners for a nicer look *//* Add some padding for content */
+    width: 200px; /* Set a width for the element */
+     
 }
 .boxLocation{
     display: flex;
@@ -132,17 +129,19 @@ h2{
 .right-container{
     display:flex;
     flex-direction: column;
-    background-color: rgb(245, 247, 247);
+    /* background-color: rgb(245, 247, 247); */
     width: calc(100% - 40%);
     scale:0;
 }
 .chart-display{
     height: calc(100% - 30%);
     margin:20px;
-    background-color: rgb(246, 242, 238);
+    background-color: rgba(255, 255, 255, 0.792);
+    backdrop-filter: blur(10px);
     border-radius: 10px;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .data-display{
@@ -150,19 +149,50 @@ h2{
     flex-direction: row;
     gap:10px;
     margin:20px;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
     height: 25%;
 }
 .data{
-    background-color: rgb(251, 242, 229);
+    background-color: rgba(255, 255, 255, 0.502);
+    backdrop-filter: blur(15px);
     height:22vh;
     width:15vw;
     border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
     position: relative;
 }
 .data:hover{
-    background-color: blueviolet;
+    background-color: rgb(177, 118, 233);
+    color: rgb(255, 255, 255);
     border-radius: 10px;
     -webkit-transition: all 1s ease;
     transition: all 1s ease;
+}
+.location{
+    height:25px;
+    width: 25px;
+}
+.rainImg{
+    height:100px;
+    width: 100px;
+    position:relative;
+}
+.humidity{
+    height:100px;
+    width: 100px;
+    position:relative;
+}
+.nameCity{
+    font-size:x-large;
+    font-weight: 500;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.min-max{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
